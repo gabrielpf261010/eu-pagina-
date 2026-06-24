@@ -24,10 +24,11 @@ justify-content: center;
     height: auto;
 }
 .titulo_site{
-padding: 50px;
-text-align: center;
-width: 50%;
-font: 30px;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    margin-left: 100px;
 }
 .sociais{
 display: flex;
