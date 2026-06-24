@@ -20,7 +20,7 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 .titulo_site{
@@ -36,7 +36,7 @@ width: 45%;
 padding-right: 50px;
 }
 .setup{
-    width: 150px;
+    width: 170px;
     height: auto;
 }
 .banner1{
