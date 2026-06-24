@@ -35,6 +35,10 @@ justify-content: flex-end;
 width: 45%;
 padding-right: 50px;
 }
+.setup{
+    width: 150px;
+    height: auto;
+}
 .banner1{
 display: flex;
 justify-content: center;
