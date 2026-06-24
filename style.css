@@ -7,7 +7,7 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-color: #2C5EAD;
+background-color: #0062ff;
 color: white;
 width: 100%;
 padding: 20px;
@@ -20,15 +20,16 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-    width: 120px;
-    height: auto;
+width: 10%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
 }
 .titulo_site{
-    padding: 50px;
-    text-align: center;
-    width: 50%;
-    font-size: 30px;
-    margin-left: 100px;
+padding: 50px;
+text-align: center;
+width: 50%;
+font: 30px;
 }
 .sociais{
 display: flex;
@@ -91,3 +92,4 @@ padding: 12px 0;
 color: #ffffff;
 text-decoration: none;
 }
+
