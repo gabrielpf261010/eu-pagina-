@@ -91,3 +91,11 @@ padding: 12px 0;
 color: #ffffff;
 text-decoration: none;
 }
+.mapa{
+    text-align: center;
+    padding: 40px;
+}
+
+.mapa iframe{
+    max-width: 100%;
+}
