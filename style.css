@@ -91,28 +91,32 @@ padding: 12px 0;
 color: #ffffff;
 text-decoration: none;
 }
-.mapa{
-    text-align: center;
+.mapa {
+    display: flex;
+    justify-content: center; 
     padding: 40px;
+    width: 100%;
 }
 
-.mapa iframe{
+.mapa iframe {
     max-width: 100%;
 }
 
-.titulo-video{
+.titulo-video {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color :#333333;
+    color: #333333;
     text-align: center;
     margin-bottom: 15px;
 }
+
 .container-video {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
     
     
