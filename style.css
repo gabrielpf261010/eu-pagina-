@@ -94,7 +94,7 @@ text-decoration: none;
 .mapa {
     display: flex;
     justify-content: center; 
-    text-align: center;
+    align-items: center;
     padding: 40px;
     width: 100%;
 }
