@@ -159,154 +159,93 @@ text-decoration: none;
   background-color: #3e8e41;
 }
 
-/* ==========================================================================
-   ESTILOS DO JOGO (Adicione ao final do seu style.css)
-   ========================================================================== */
+/* ================================= */
+/* ESTILO PRINCIPAL DO JOGO */
+/* ================================= */
 
-.game-main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #5c94fc; /* Azul céu clássico do Mario */
-    min-height: 70vh;
-}
-
-.game-title {
-    color: #fff;
-    font-family: 'Arial Black', Gadget, sans-serif;
-    text-shadow: 3px 3px 0px #000;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-#game-wrapper {
-    max-width: 800px;
+#meu-jogo {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
+
+#meu-jogo h1 {
+    margin-bottom: 20px;
+}
+
+/* INFORMAÇÕES */
+
+#game-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+/* ÁREA DO JOGO */
 
 #game-container {
     position: relative;
     width: 800px;
-    height: 400px;
-    background-color: #5c94fc;
-    border: 6px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
 }
 
 #gameCanvas {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+    background: #70c5ff;
+    border: 4px solid white;
 }
 
-/* Interface de Pontuação dentro do Canvas */
-#game-ui {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    right: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 0px #000;
-    pointer-events: none; /* Não atrapalha cliques */
-    z-index: 5;
-}
+/* TELA DE INÍCIO E FINAL */
 
-/* Telas sobrepostas (Game over / Vitória) */
 #game-screen-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    z-index: 10;
-}
-
-#game-screen-overlay.hidden {
-    display: none;
+    align-items: center;
+    color: white;
 }
 
 #game-screen-overlay h2 {
-    color: #ff4d4d;
-    font-size: 40px;
-    font-family: 'Arial Black', sans-serif;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 0px #000;
+    padding: 10px;
 }
 
-#restart-btn, #fullscreen-btn {
-    padding: 12px 24px;
+/* BOTÕES */
+
+#meu-jogo button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    background: #ffcc00;
+    color: black;
     font-size: 16px;
     font-weight: bold;
-    color: white;
-    background-color: #e52521; /* Vermelho Mario */
-    border: 3px solid #000;
-    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 0px #000;
-    transition: transform 0.1s;
+    margin: 10px;
 }
 
-#restart-btn:hover, #fullscreen-btn:hover {
-    background-color: #b3100e;
-    transform: translateY(-2px);
+#meu-jogo button:hover {
+    background: #ffaa00;
 }
 
-#restart-btn:active, #fullscreen-btn:active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 0px #000;
-}
+/* RESPONSIVIDADE */
 
-/* Painel de controles inferior */
-.controls-panel {
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
-}
+@media (max-width: 600px) {
+    #meu-jogo {
+        padding: 10px 0;
+    }
 
-#fullscreen-btn {
-    background-color: #00a2e8; /* Azul */
-    margin-bottom: 10px;
-}
-
-.controls-panel .instructions {
-    color: #fff;
-    font-size: 14px;
-    margin-top: 8px;
-    text-shadow: 1px 1px 1px #000;
-}
-
-/* Ajustes para o modo de Tela Cheia do Navegador */
-#game-container:fullscreen {
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5c94fc;
-}
-#game-container:fullscreen #gameCanvas {
-    width: auto;
-    height: 100%;
-    max-width: 100vw;
+    #game-info {
+        gap: 15px;
+        font-size: 15px;
+    }
 }

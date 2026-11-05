@@ -25,40 +25,38 @@
   </div>
 </div>
 
-<!--Jogo-->
+!-- ================================= -->
+<!-- CONTEÚDO PRINCIPAL DO JOGO -->
+<!-- ================================= -->
 
+<section id="meu-jogo">
 
-    <!-- CONTEÚDO PRINCIPAL DO JOGO (NO MEIO DA PÁGINA) -->
-    <main class="game-main-content">
-        
-        <h1 class="game-title">Super Mario Bros - HTML5 Edition</h1>
-        
-        <div id="game-wrapper">
-            <div id="game-container">
-                <!-- Placar -->
-                <div id="game-ui">
-                    <div>Moedas: <span id="coin-count">0</span></div>
-                    <div>Vidas: <span id="live-count">3</span></div>
-                </div>
+    <h1>Meu Jogo de Plataforma</h1>
 
-                <!-- Elementos do Jogo (Gerados pelo JS) -->
-                <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <!-- INFORMAÇÕES DO JOGO -->
+    <div id="game-info">
+        <span>Moedas: <b id="coin-count">0</b></span>
+        <span>Vidas: <b id="live-count">3</b></span>
+        <span>Fase: <b id="level-count">1</b></span>
+    </div>
 
-                <!-- Tela de Game Over / Vitória -->
-                <div id="game-screen-overlay" class="hidden">
-                    <h2 id="overlay-text">Fim de Jogo!</h2>
-                    <button id="restart-btn">Jogar Novamente</button>
-                </div>
-            </div>
+    <!-- ÁREA ONDE O JOGO É DESENHADO -->
+    <div id="game-container">
 
-            <!-- Controle de Tela Cheia -->
-            <div class="controls-panel">
-                <button id="fullscreen-btn">📺 Jogar em Tela Cheia</button>
-                <p class="instructions">Controles: Use as setas <b>Esquerda / Direita</b> para mover e <b>Seta para Cima ou Espaço</b> para pular.</p>
-            </div>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+        <!-- TELA DE INÍCIO E FIM -->
+        <div id="game-screen-overlay">
+            <h2 id="overlay-text">Pronto para jogar?</h2>
+            <button id="restart-btn">Começar</button>
         </div>
 
-    </main>
+    </div>
+
+    <!-- BOTÃO DE TELA CHEIA -->
+    <button id="fullscreen-btn">Tela cheia</button>
+
+</section>
 
 
 
